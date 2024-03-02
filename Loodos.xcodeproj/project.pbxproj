@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D245B43C2902CAE200ACCBD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B43B2902CAE200ACCBD7 /* AppDelegate.swift */; };
+		D245B4452902CAE300ACCBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D245B4442902CAE300ACCBD7 /* Assets.xcassets */; };
+		D245B4532902D13100ACCBD7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4522902D13100ACCBD7 /* LaunchScreenViewController.swift */; };
+		D245B4592902D3CD00ACCBD7 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4582902D3CD00ACCBD7 /* ReachabilityManager.swift */; };
+		D245B45F2902DA5D00ACCBD7 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B45E2902DA5D00ACCBD7 /* UIViewController+Ext.swift */; };
+		D245B4642902E4A200ACCBD7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4632902E4A200ACCBD7 /* AlertManager.swift */; };
+		D245B4682902F5D000ACCBD7 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4672902F5D000ACCBD7 /* MovieListViewController.swift */; };
+		D245B46D2903D0BC00ACCBD7 /* MovieItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B46C2903D0BC00ACCBD7 /* MovieItemCell.swift */; };
+		D245B46F2903D0ED00ACCBD7 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B46E2903D0ED00ACCBD7 /* UIManager.swift */; };
+		D245B4712903D35300ACCBD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4702903D35300ACCBD7 /* NetworkManager.swift */; };
+		D245B4742903D54F00ACCBD7 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4732903D54F00ACCBD7 /* MovieResponse.swift */; };
+		D245B4772904012B00ACCBD7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D245B4762904012B00ACCBD7 /* Kingfisher */; };
+		D245B4792904273D00ACCBD7 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B4782904273D00ACCBD7 /* MovieListViewModel.swift */; };
+		D245B47D29042E8100ACCBD7 /* MovieItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B47C29042E8100ACCBD7 /* MovieItemViewModel.swift */; };
+		D245B4802904461E00ACCBD7 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B47F2904461E00ACCBD7 /* MovieDetailViewController.swift */; };
+		D245B48429044E5700ACCBD7 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B48329044E5700ACCBD7 /* MovieDetailViewModel.swift */; };
+		D245B486290525C600ACCBD7 /* TransitionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B485290525C600ACCBD7 /* TransitionScreenViewController.swift */; };
+		D245B49229053EFF00ACCBD7 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245B49129053EFF00ACCBD7 /* RemoteConfigManager.swift */; };
+		D2F6C8EE2905922500FBD345 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D2F6C8ED2905922500FBD345 /* FirebaseAnalytics */; };
+		D2F6C8F02905922500FBD345 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D2F6C8EF2905922500FBD345 /* FirebaseMessaging */; };
+		D2F6C8F22905922500FBD345 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D2F6C8F12905922500FBD345 /* FirebaseRemoteConfig */; };
+		E27BF3672B932BE8008E9724 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BF3662B932BE8008E9724 /* FirebaseManager.swift */; };
+		E27BF3692B932E4B008E9724 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BF3682B932E4B008E9724 /* APIManager.swift */; };
+		E27BF36B2B934388008E9724 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E27BF36A2B934388008E9724 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D245B4382902CAE200ACCBD7 /* Loodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D245B43B2902CAE200ACCBD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D245B4442902CAE300ACCBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D245B4492902CAE300ACCBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D245B4522902D13100ACCBD7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		D245B4582902D3CD00ACCBD7 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		D245B45E2902DA5D00ACCBD7 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		D245B4632902E4A200ACCBD7 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		D245B4672902F5D000ACCBD7 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		D245B46C2903D0BC00ACCBD7 /* MovieItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemCell.swift; sourceTree = "<group>"; };
+		D245B46E2903D0ED00ACCBD7 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		D245B4702903D35300ACCBD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D245B4732903D54F00ACCBD7 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		D245B4782904273D00ACCBD7 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		D245B47C29042E8100ACCBD7 /* MovieItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemViewModel.swift; sourceTree = "<group>"; };
+		D245B47F2904461E00ACCBD7 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		D245B48329044E5700ACCBD7 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		D245B485290525C600ACCBD7 /* TransitionScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionScreenViewController.swift; sourceTree = "<group>"; };
+		D245B49129053EFF00ACCBD7 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		E27BF3662B932BE8008E9724 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		E27BF3682B932E4B008E9724 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E27BF36A2B934388008E9724 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D245B4352902CAE200ACCBD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F6C8F02905922500FBD345 /* FirebaseMessaging in Frameworks */,
+				D2F6C8EE2905922500FBD345 /* FirebaseAnalytics in Frameworks */,
+				D245B4772904012B00ACCBD7 /* Kingfisher in Frameworks */,
+				D2F6C8F22905922500FBD345 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D245B42F2902CAE200ACCBD7 = {
+			isa = PBXGroup;
+			children = (
+				D245B43A2902CAE200ACCBD7 /* Loodos */,
+				D245B4392902CAE200ACCBD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D245B4392902CAE200ACCBD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4382902CAE200ACCBD7 /* Loodos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D245B43A2902CAE200ACCBD7 /* Loodos */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4722903D53800ACCBD7 /* Models */,
+				D245B4502902D11500ACCBD7 /* Screens */,
+				D245B4542902D32100ACCBD7 /* Utilities */,
+				D245B44F2902D07500ACCBD7 /* Configuration */,
+			);
+			path = Loodos;
+			sourceTree = "<group>";
+		};
+		D245B44F2902D07500ACCBD7 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D245B43B2902CAE200ACCBD7 /* AppDelegate.swift */,
+				D245B4442902CAE300ACCBD7 /* Assets.xcassets */,
+				D245B4492902CAE300ACCBD7 /* Info.plist */,
+				E27BF36A2B934388008E9724 /* GoogleService-Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D245B4502902D11500ACCBD7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4662902F5A800ACCBD7 /* MovieList */,
+				D245B47E2904460100ACCBD7 /* MovieDetail */,
+				D245B4512902D11F00ACCBD7 /* LaunchScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D245B4512902D11F00ACCBD7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4522902D13100ACCBD7 /* LaunchScreenViewController.swift */,
+				D245B485290525C600ACCBD7 /* TransitionScreenViewController.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		D245B4542902D32100ACCBD7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4652902E4E500ACCBD7 /* Managers */,
+				D245B45D2902DA4C00ACCBD7 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D245B45D2902DA4C00ACCBD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D245B45E2902DA5D00ACCBD7 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D245B4652902E4E500ACCBD7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E27BF3682B932E4B008E9724 /* APIManager.swift */,
+				D245B46E2903D0ED00ACCBD7 /* UIManager.swift */,
+				D245B4632902E4A200ACCBD7 /* AlertManager.swift */,
+				D245B4702903D35300ACCBD7 /* NetworkManager.swift */,
+				D245B4582902D3CD00ACCBD7 /* ReachabilityManager.swift */,
+				D245B49129053EFF00ACCBD7 /* RemoteConfigManager.swift */,
+				E27BF3662B932BE8008E9724 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D245B4662902F5A800ACCBD7 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				D245B46B2903D0A500ACCBD7 /* Views */,
+				D245B4672902F5D000ACCBD7 /* MovieListViewController.swift */,
+				D245B4782904273D00ACCBD7 /* MovieListViewModel.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		D245B46B2903D0A500ACCBD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D245B46C2903D0BC00ACCBD7 /* MovieItemCell.swift */,
+				D245B47C29042E8100ACCBD7 /* MovieItemViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D245B4722903D53800ACCBD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D245B4732903D54F00ACCBD7 /* MovieResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D245B47E2904460100ACCBD7 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D245B47F2904461E00ACCBD7 /* MovieDetailViewController.swift */,
+				D245B48329044E5700ACCBD7 /* MovieDetailViewModel.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D245B4372902CAE200ACCBD7 /* Loodos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D245B44C2902CAE300ACCBD7 /* Build configuration list for PBXNativeTarget "Loodos" */;
+			buildPhases = (
+				D245B4342902CAE200ACCBD7 /* Sources */,
+				D245B4352902CAE200ACCBD7 /* Frameworks */,
+				D245B4362902CAE200ACCBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loodos;
+			packageProductDependencies = (
+				D245B4762904012B00ACCBD7 /* Kingfisher */,
+				D2F6C8ED2905922500FBD345 /* FirebaseAnalytics */,
+				D2F6C8EF2905922500FBD345 /* FirebaseMessaging */,
+				D2F6C8F12905922500FBD345 /* FirebaseRemoteConfig */,
+			);
+			productName = Loodos;
+			productReference = D245B4382902CAE200ACCBD7 /* Loodos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D245B4302902CAE200ACCBD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D245B4372902CAE200ACCBD7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D245B4332902CAE200ACCBD7 /* Build configuration list for PBXProject "Loodos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D245B42F2902CAE200ACCBD7;
+			packageReferences = (
+				D245B4752904012B00ACCBD7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D2F6C8EC2905922500FBD345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D245B4392902CAE200ACCBD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D245B4372902CAE200ACCBD7 /* Loodos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D245B4362902CAE200ACCBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D245B4452902CAE300ACCBD7 /* Assets.xcassets in Resources */,
+				E27BF36B2B934388008E9724 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D245B4342902CAE200ACCBD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D245B4712903D35300ACCBD7 /* NetworkManager.swift in Sources */,
+				D245B49229053EFF00ACCBD7 /* RemoteConfigManager.swift in Sources */,
+				D245B4532902D13100ACCBD7 /* LaunchScreenViewController.swift in Sources */,
+				D245B43C2902CAE200ACCBD7 /* AppDelegate.swift in Sources */,
+				D245B4742903D54F00ACCBD7 /* MovieResponse.swift in Sources */,
+				D245B4802904461E00ACCBD7 /* MovieDetailViewController.swift in Sources */,
+				D245B4642902E4A200ACCBD7 /* AlertManager.swift in Sources */,
+				D245B46F2903D0ED00ACCBD7 /* UIManager.swift in Sources */,
+				D245B486290525C600ACCBD7 /* TransitionScreenViewController.swift in Sources */,
+				D245B47D29042E8100ACCBD7 /* MovieItemViewModel.swift in Sources */,
+				D245B4682902F5D000ACCBD7 /* MovieListViewController.swift in Sources */,
+				D245B4792904273D00ACCBD7 /* MovieListViewModel.swift in Sources */,
+				E27BF3692B932E4B008E9724 /* APIManager.swift in Sources */,
+				D245B45F2902DA5D00ACCBD7 /* UIViewController+Ext.swift in Sources */,
+				D245B46D2903D0BC00ACCBD7 /* MovieItemCell.swift in Sources */,
+				D245B48429044E5700ACCBD7 /* MovieDetailViewModel.swift in Sources */,
+				D245B4592902D3CD00ACCBD7 /* ReachabilityManager.swift in Sources */,
+				E27BF3672B932BE8008E9724 /* FirebaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D245B44A2902CAE300ACCBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D245B44B2902CAE300ACCBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D245B44D2902CAE300ACCBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T5Z33R245;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Loodos/Configuration/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mustafapekdemir.Loodos-MovieApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D245B44E2902CAE300ACCBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T5Z33R245;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Loodos/Configuration/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mustafapekdemir.Loodos-MovieApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D245B4332902CAE200ACCBD7 /* Build configuration list for PBXProject "Loodos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D245B44A2902CAE300ACCBD7 /* Debug */,
+				D245B44B2902CAE300ACCBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D245B44C2902CAE300ACCBD7 /* Build configuration list for PBXNativeTarget "Loodos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D245B44D2902CAE300ACCBD7 /* Debug */,
+				D245B44E2902CAE300ACCBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D245B4752904012B00ACCBD7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		D2F6C8EC2905922500FBD345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D245B4762904012B00ACCBD7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D245B4752904012B00ACCBD7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D2F6C8ED2905922500FBD345 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2F6C8EC2905922500FBD345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D2F6C8EF2905922500FBD345 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2F6C8EC2905922500FBD345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		D2F6C8F12905922500FBD345 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2F6C8EC2905922500FBD345 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D245B4302902CAE200ACCBD7 /* Project object */;
+}
