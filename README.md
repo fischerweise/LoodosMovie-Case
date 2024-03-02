@@ -15,6 +15,10 @@
 - Movie detail page was created with collection view.
 - When the user click a movie, the movie detail view appears.
 
+## PS: 
+- Since I did not have an Apple Developer account, the Firebase Push Notifications feature could not be tested.
+
+
 ## Media
 - *_No internet connection_*
 
