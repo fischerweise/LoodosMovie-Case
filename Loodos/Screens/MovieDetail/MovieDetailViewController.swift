@@ -70,7 +70,11 @@ private extension MovieDetailViewController {
     
     func updateViewController() {
         titleLabel.text = viewModel.movieTitle
+        titleLabel.font = Avenir.demibold.of(size: 16.0)
+        titleLabel.numberOfLines = 0
         overviewLabel.text = viewModel.overviewText
+        overviewLabel.font = Avenir.medium.of(size: 20.0)
+        overviewLabel.textColor = .darkGray
         imageView.kf.setImage(
             with: viewModel.posterURL,
             placeholder: UIImage(named: "movie-placeholder")!

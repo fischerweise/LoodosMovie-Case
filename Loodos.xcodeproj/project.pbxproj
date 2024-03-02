@@ -31,6 +31,7 @@
 		E27BF3672B932BE8008E9724 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BF3662B932BE8008E9724 /* FirebaseManager.swift */; };
 		E27BF3692B932E4B008E9724 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BF3682B932E4B008E9724 /* APIManager.swift */; };
 		E27BF36B2B934388008E9724 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E27BF36A2B934388008E9724 /* GoogleService-Info.plist */; };
+		E2FF6D262B93586C00F3703A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6D252B93586C00F3703A /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		E27BF3662B932BE8008E9724 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		E27BF3682B932E4B008E9724 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		E27BF36A2B934388008E9724 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2FF6D252B93586C00F3703A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				D245B45E2902DA5D00ACCBD7 /* UIViewController+Ext.swift */,
+				E2FF6D252B93586C00F3703A /* Font.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				D245B49229053EFF00ACCBD7 /* RemoteConfigManager.swift in Sources */,
 				D245B4532902D13100ACCBD7 /* LaunchScreenViewController.swift in Sources */,
 				D245B43C2902CAE200ACCBD7 /* AppDelegate.swift in Sources */,
+				E2FF6D262B93586C00F3703A /* Font.swift in Sources */,
 				D245B4742903D54F00ACCBD7 /* MovieResponse.swift in Sources */,
 				D245B4802904461E00ACCBD7 /* MovieDetailViewController.swift in Sources */,
 				D245B4642902E4A200ACCBD7 /* AlertManager.swift in Sources */,

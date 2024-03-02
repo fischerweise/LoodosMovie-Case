@@ -13,7 +13,7 @@ class LaunchScreenViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.textColor = UIColor(red: 94/255, green: 173/255, blue: 188/255, alpha: 1.0)
-        label.font = UIFont.systemFont(ofSize: 36, weight: .medium)
+        label.font = UIFont.systemFont(ofSize: 85, weight: .medium)
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

@@ -73,8 +73,13 @@ final class MovieListViewModel {
         NetworkManager.searchMovies(with: query) { [weak self] result in
             switch result {
             case .success(let movies):
-                self?.movies = movies.results
-                self?.delegate?.willUpdateViewController()
+                if movies.results.isEmpty {
+                    self?.delegate?.willUpdateViewController(with: "The movie you searched was not found.")
+                } else {
+                    self?.movies = movies.results
+                    self?.delegate?.willUpdateViewController()
+                }
+                
             case .failure(let error):
                 self?.delegate?.willUpdateViewController(with: error.rawValue)
             }
